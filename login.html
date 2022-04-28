@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name=""viewport" content="width=device-width, initial-scal=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<link rel="stylesheet" href="style.css">
+<title>Registration form</title>
+</head>
+<body>
+    <header class="showcase">
+        <div class="showcase-top">
+         <form action="hello.html" style="border:1px solid #ccc">
+        <div class="container">
+          <h1>login</h1>
+          <hr>
+          <label for="email"><b>username or Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required><br>
+          
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required><br>
+          <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+          </label><br><br>
+          <button type="submit" class="signupbtn">login</button><BR><BR><BR><BR><BR><BR><BR><BR>
+          <h1><center>STIGE</center></h1>
+        </div>
+      </div>
+   </form>
+  
+ <!-- <?php
+  if(isset($_POST['submit']))
+  {
+      error_reporting(1);
+      include("config.php");
+      
+      $Email=$_POST['email'];
+      $Password=$_POST['password'];
+      
+      $sql = "select * from register where Email='$Email' and Password='$Password'";
+      $result = mysqli_query($con,$sql);
+      $count=mysqlI_num_rows($result);
+  
+  
+      if($count>0)
+      {
+          echo "<script>
+                  alert('Login Successful');
+              </script>";
+          echo "<script> location.href='login1.php'; </script>";
+      }
+      else
+      {
+          
+          echo "<script>
+                  alert('Invalid Email or Password');
+              </script>";
+      }
+  }
+  ?>--> 
+</header>
+</body>
+</html>
